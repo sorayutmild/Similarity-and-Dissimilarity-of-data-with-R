@@ -1,0 +1,6 @@
+```{r}
+cust_data = read.csv('data/ML-Activities - Lifestyle.csv')
+cust_data
+dist(cust_data, method = 'euclidean')
+1/(1+dist(cust_data, method = 'euclidean',diag = TRUE, upper = TRUE))
+```
